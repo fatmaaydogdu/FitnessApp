@@ -15,7 +15,8 @@ function MemberSign({ navigation }) {
 
     function handleSubmit() {
         if (!userName || !userSurname || !userAge || !userEmail) {
-            Alert.alert('Lütfen boş alan bırakmayınız!')
+            Alert.alert('Lütfen boş alan bırakmayınız!');
+            return;
         }
 
         const user = {
@@ -23,8 +24,9 @@ function MemberSign({ navigation }) {
             userSurname,
             userAge,
             userEmail,
-        }
-        navigation.navigate();
+        };
+
+        navigation.navigate('MemberResultScreen', {user});
     }
 
     return (
