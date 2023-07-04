@@ -1,5 +1,5 @@
 *.js linguist-detectable=true 
-*.typescript linguist-detectable=false  
+*.ts linguist-detectable=false  
 *.java linguist-detectable=false  
 *.ruby linguist-detectable=false  
 *.Objective-C linguist-detectable=false
